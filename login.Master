@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="WebApplicationImpora2222025.login" %>
+
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+
+<head runat="server">
+    <title>Impora | Login</title>
+    <!-- start: META -->
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <!-- end: GOOGLE FONTS -->
+    <!-- start: MAIN CSS -->
+
+    <link rel="stylesheet" href="panel/maneger/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="panel/maneger/vendor/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="panel/maneger/vendor/themify-icons/themify-icons.min.css" />
+    <link href="panel/maneger/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen" />
+    <link href="panel/maneger/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen" />
+    <link href="panel/maneger/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen" />
+    <!-- end: MAIN CSS -->
+    <!-- start: CLIP-TWO CSS -->
+    <link rel="stylesheet" href="assets/css/styles1.css" />
+    <link rel="stylesheet" href="panel/maneger/assets/css/plugins.css" />
+    <link rel="stylesheet" href="panel/maneger/assets/css/themes/theme-1.css" id="skin_color" />
+    <!-- end:  CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+    <%--<script src='https://www.google.com/recaptcha/api.js'></script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- end: LOGIN -->
+    <!-- start: MAIN JAVASCRIPTS -->
+    <script src="panel/maneger/vendor/jquery/jquery.min.js"></script>
+    <script src="panel/maneger/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="panel/maneger/vendor/modernizr/modernizr.js"></script>
+    <script src="panel/maneger/vendor/jquery-cookie/jquery.cookie.js"></script>
+    <script src="panel/maneger/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="panel/maneger/vendor/switchery/switchery.min.js"></script>
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="panel/maneger/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: CLIP-TWO JAVASCRIPTS -->
+    <script src="panel/maneger/assets/js/main.js"></script>
+    <!-- start: JavaScript Event Handlers for this page -->
+    <script src="panel/maneger/assets/js/login.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Login.init();
+        });
+    </script>
+    <!-- end: JavaScript Event Handlers for this page -->
+    <!-- end: CLIP-TWO JAVASCRIPTS -->
+</body>
+</html>

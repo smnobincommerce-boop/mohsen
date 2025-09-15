@@ -1,0 +1,539 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="base.master.cs" Inherits="WebApplicationImpora2222025._base" %>
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head runat="server">
+    <title>Import Xpress | Front End</title>
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="bower_components/themify-icons/themify-icons.css" rel="stylesheet" media="screen">
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="bower_components/slick.js/slick/slick.css" rel="stylesheet" media="screen" />
+    <link href="bower_components/slick.js/slick/slick-theme.css" rel="stylesheet" media="screen" />
+    <link href="bower_components/swiper/dist/css/swiper.min.css" rel="stylesheet" media="screen" />
+    <link href="bower_components/magnific-popup/dist/magnific-popup.css" rel="stylesheet" media="screen" />
+    <link href="assets/css/styles1.css" rel="stylesheet" media="screen">
+    <link href="assets/css/plugins1.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEZDVYYEQN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JEZDVYYEQN');
+    </script>
+    <script>
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 991) {
+                $('.bottomMenu').fadeIn();
+            } else {
+                $('.bottomMenu').fadeOut();
+            }
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NZF222JJ');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZF222JJ"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form id="form1" runat="server">
+        <div id="app">
+            <header class="small-header">
+                <div id="topbar" class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="callus no-wrap text-center" style="color: #FFFFFF; font-size: medium">
+                                <a id="top_desk" target="_blank" dir="rtl" href="<%= h11 %>" style="color: #FFFFFF"><%= t11 %></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-dark" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class=" pull-left menu-toggler hidden-md hidden-lg mobile-button" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse"><span class="sr-only">Toggle navigation</span> <i class="ti-align-justify"></i></a>
+                            <a class=" pull-right hidden-md hidden-lg margin-right-20 mobile-button mobile-menu-search" href="result-search"><span class="sr-only">Search Button</span> <i class="ti-search"></i></a>
+                            <a href="index" class="navbar-brand">
+                                <img src="img/NLogo-En.svg" alt="nobin gostar paya" height="40" id="img_brand_header" />
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse" dir="rtl">
+                            <ul class="nav navbar-nav navbar-right " dir="rtl">
+                                <li runat="server" id="Language" class="dropdown">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Language</a>
+                                    <ul class="dropdown-menu">
+                                        <li runat="server" id="Li5">
+                                            <a target="_blank" href="index">فارسی</a>
+                                        </li>
+                                        <li runat="server" id="Li6">
+                                            <a target="_blank" href="En/indexEn">English </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li runat="server" id="home" dir="rtl">
+                                    <a href="index.aspx">خانه </a>
+                                </li>
+                                <li runat="server" id="Impora" class="dropdown" dir="rtl">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle" dir="rtl">نوبین </a>
+                                    <ul class="dropdown-menu" dir="rtl">
+
+                                        <li runat="server" id="aboutـus" dir="rtl">
+                                            <a href="about_us" dir="rtl">درباره ما</a>
+                                        </li>
+                                        <li runat="server" id="Impora_careers">
+                                            <a href="careers">همکاری و استخدام </a>
+                                        </li>
+                                        <li runat="server" id="Impora_contact_us">
+                                            <a href="contact-us">تماس با ما </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li runat="server" id="services" class="dropdown mega-menu">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">خدمات تخصصی</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="mega-menu-content">
+                                                <div class="col-md-12">
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <span class="mega-menu-sub-title text-center">خدمات ما</span>
+                                                            <ul>
+
+                                                                <li runat="server" id="Currency_Allocation_for_Imports">
+                                                                    <a href="Currency-Allocation-for-Imports">تخصیص ارز واردات</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Purchasing_and_Allocating_Foreign_Exchange_for_Imports">
+                                                                    <a href="Purchasing-and-Allocating-Foreign-Exchange-for-Imports">خرید و تخصیص ارز وارداتی</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Goods_Import_Registration">
+                                                                    <a href="Goods-Import-Registration">ثبت سفارش کالا</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Comprehensive_Guide_to_International_Transportation">
+                                                                    <a href="Comprehensive-Guide-to-International-Transportation">راهنمای جامع حمل و نقل بین‌المللی</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Foreign_Exchange_Commitment_Clearance_for_Imports_and_Exports">
+                                                                    <a href="Foreign-Exchange-Commitment-Clearance-for-Imports-and-Exports">رفع تعهد ارزی وارداتی و صادراتی</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Sourcing_and_Procurement">
+                                                                    <a href="Sourcing-and-Procurement">تحقیق و تأمین کالا</a>
+                                                                </li>
+
+                                                                <li runat="server" id="International_Shipping_Logistics">
+                                                                    <a href="International-Shipping-Logistics">حمل‌ونقل بین‌المللی</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Customs_Clearance">
+                                                                    <a href="Customs-Clearance">ترخیص کالا از گمرک</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Risk_Management">
+                                                                    <a href="Risk-Management">مدیریت ریسک و بیمه بار</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Obtaining_a_Commercial_Card">
+                                                                    <a href="Obtaining-a-Commercial-Card">اخذ کارت بازرگانی</a>
+                                                                </li>
+
+                                                                <li runat="server" id="Li1">
+                                                                    <a href="Trade-Academy">آموزش سامانه‌های تجارت و گمرک</a>
+                                                                </li>
+                                                                <li runat="server" id="Registering_an_Imported_Car_with_a_National_Code">
+                                                                    <a href="Registering-an-imported-car-with-a-national-code">ثبت نام خودروی وارداتی با کد ملی</a>
+                                                                </li>
+                                                                آموزش سامانه‌های تجارت و گمرک
+
+
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown" runat="server" id="blog">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">دانشنامه </a>
+                                    <ul class="dropdown-menu">
+                                        <li runat="server" id="blog_steel">
+                                            <a href="blog/Educational-and-How-To-Content">آموزش و راهنمای واردات (Educational & How-To Content)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <%--  <li class="dropdown" runat="server" id="Li1">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">اخبار تحلیلی </a>
+                                    <ul class="dropdown-menu">
+                                        <li runat="server" id="news">
+                                            <a target="_blank" href="news/listnews">اخبار و تحلیل بازار (Industry News & Market Insights)</a>
+                                        </li>
+                                    </ul>
+                                </li>--%>
+                                <li class="dropdown" runat="server" id="login_regist">
+                                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">ثبت نام/ورود </a>
+                                    <ul class="dropdown-menu">
+                                        <li runat="server" id="login_user">
+                                            <a target="_blank" href="account/login">ورود به سامانه</a>
+                                        </li>
+                                        <li runat="server" id="Li2">
+                                            <a target="_blank" href="account/regisration">ثبت نام در سامانه</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-search hidden-sm hidden-xs">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                </li>
+                            </ul>
+                            <div class="close-handle visible-sm-block visible-xs-block menu-toggler" data-toggle="collapse " href=".navbar-collapse">
+                                <div class="arrow-left"></div>
+                                <div class="arrow-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay-search">
+                        <a href="#" class="pull-right margin-right-20 close-search mobile-button" data-toggle-target="body" data-toggle-class="search-open"><i class="ti-close"></i></a>
+                        <div class="input-group well" dir="rtl">
+                            <asp:TextBox ID="txtsearch" runat="server" CssClass=" form-control"></asp:TextBox>
+                            <span class="input-group-btn">
+                                <asp:ImageButton ID="ImageButton5" runat="server" CssClass=" pull-left" ImageUrl="~/img/UC_SEARCH_ICON_170616.PNG" ImageAlign="Middle" OnClick="ImageButton3_Click" Width="30" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="app-content">
+                <div class="main-content">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <footer id="footer">
+                    <div class="container container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 padding-bottom-25" dir="rtl">
+                                <a class="logo pull-left" href="index">
+                                    <img alt="nobin gostar paya" src="img/NLogo-En.svg" width="200" id="img_brand_footer" runat="server">
+                                </a>
+                                <p class="padding-30">
+                                <p dir="rtl">نوبین، سامانه تخصصی واردات و تأمین کالا، با مجوزهای فعالیت از سازمان‌های زیر می‌باشد:</p>
+                                <ul>
+                                    <li>وزارت صنعت، معدن و تجارت (صمت)</li>
+                                    <li>اتاق بازرگانی، صنایع، معادن و کشاورزی ایران</li>
+                                    <li>سازمان گمرک جمهوری اسلامی ایران</li>
+                                    <li>سازمان ملی استاندارد ایران</li>
+                                </ul>
+
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a rel="nofollow" target="_blank" href="https://maps.app.goo.gl/miaWQ9RYFBro9v9z9"><i class="fa fa-map-marker fa-2x"></i>آدرس : تهران ٫ خیابان شهید مطهری ٫ خیابان ترکمنستان٫ کوچه افرا ٫ پلاک ۱۰ ٫طبقه ۱ ٫ واحد ۲ </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 padding-bottom-25" dir="rtl">
+                                <div class="contact-details">
+                                    <h4 class="margin-bottom-25">خدمات تخصصی</h4>
+                                    <ul class="posts">
+                                        <li>
+                                            <a href="Trade-Academy" style="font-size: 14px">آموزش سامانه‌های تجارت و گمرک</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="Currency-Allocation-for-Imports" style="font-size: 14px">تخصیص ارز واردات</a>
+                                        </li>
+                                        <li>
+                                            <a href="Purchasing-and-Allocating-Foreign-Exchange-for-Imports" style="font-size: 14px">خرید و تخصیص ارز وارداتی</a>
+                                        </li>
+                                        <li>
+                                            <a href="Goods-Import-Registration" style="font-size: 14px">ثبت سفارش کالا</a>
+                                        </li>
+                                        <li>
+                                            <a href="Comprehensive-Guide-to-International-Transportation" style="font-size: 14px">راهنمای جامع حمل‌ونقل بین‌المللی</a>
+                                        </li>
+                                        <li>
+                                            <a href="Customs-Clearance" style="font-size: 14px">ترخیص کالا از گمرک</a>
+                                        </li>
+                                        <li>
+                                            <a href="Risk-Management" style="font-size: 14px">مدیریت ریسک و بیمه بار</a>
+                                        </li>
+
+                                    </ul>
+                                    <%--    <div class="text-center ">
+                                        <a  rel="nofollow"  referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=236717&amp;Code=B5eu3wZtw7aAJEW54EYs">
+                                            <img loading="lazy" referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=236717&amp;Code=B5eu3wZtw7aAJEW54EYs" alt="" style="cursor: pointer" id="B5eu3wZtw7aAJEW54EYs"></a>
+                                    </div>--%>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 padding-bottom-25" dir="rtl">
+                                <h4 class="margin-bottom-25">آخرین مطالب</h4>
+                                <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" GroupItemCount="3">
+                                    <EmptyDataTemplate>
+                                        <table runat="server" style="">
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </EmptyDataTemplate>
+                                    <EmptyItemTemplate>
+                                        <td runat="server" />
+                                    </EmptyItemTemplate>
+                                    <GroupTemplate>
+                                        <tr runat="server" id="itemPlaceholderContainer">
+                                            <td runat="server" id="itemPlaceholder"></td>
+                                        </tr>
+                                    </GroupTemplate>
+                                    <ItemTemplate>
+                                        <div class="row" style="font-size: 14px">
+                                            <div class="col-xs-8">
+                                                <div class="post-content">
+                                                    <p>
+                                                        <a target="_blank" href="<%# "blog/paper.aspx?I="+ Eval("id") %>"><%# Eval("subject_paper") %></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="margin-bottom-30">
+                                                    <a target="_blank" href="<%# "blog/paper.aspx?I="+ Eval("id") %>">
+                                                        <img loading="lazy" alt='<%# Eval("alt_img") %>' class="img-responsive radius-5" id="img_top_blog" runat="server" src='<%# Eval("img") %>'>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <table runat="server">
+                                            <tr runat="server">
+                                                <td runat="server">
+                                                    <table runat="server" id="groupPlaceholderContainer" style="" border="0">
+                                                        <tr runat="server" id="groupPlaceholder"></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr runat="server">
+                                                <td runat="server" style=""></td>
+                                            </tr>
+                                        </table>
+                                    </LayoutTemplate>
+                                    <SelectedItemTemplate>
+                                        <td runat="server" style="">id:
+                                            <asp:Label Text='<%# Eval("id") %>' runat="server" ID="idLabel" /><br />
+                                            subject_paper:
+                                            <asp:Label Text='<%# Eval("subject_paper") %>' runat="server" ID="subject_paperLabel" /><br />
+                                            img:
+                                            <asp:Label Text='<%# Eval("img") %>' runat="server" ID="imgLabel" /><br />
+                                            alt_img:
+                                            <asp:Label Text='<%# Eval("alt_img") %>' runat="server" ID="alt_imgLabel" /><br />
+                                            p_description:
+                                            <asp:Label Text='<%# Eval("p_description") %>' runat="server" ID="p_descriptionLabel" /><br />
+                                        </td>
+                                    </SelectedItemTemplate>
+                                </asp:ListView>
+
+                                <h4 class="margin-top-15" dir="rtl">ما را دنبال کنید</h4>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-xs-1 tooltips" data-original-title="instagram" data-placement="top">
+                                            <a rel="nofollow" target="_blank" href="https://www.instagram.com/imporaa"><i class="fa fa-instagram fa-2x"></i></a>
+                                        </div>
+                                        <div class="col-xs-1 tooltips" data-original-title="whatsapp" data-placement="top">
+                                            <a rel="nofollow" target="_blank" href="https://api.whatsapp.com/send/?phone=989102094047&text&app_absent=0"><i class="fa fa-whatsapp fa-2x"></i></a>
+                                        </div>
+                                        <div class="col-xs-1 tooltips" data-original-title="telegram" data-placement="top">
+                                            <a rel="nofollow" target="_blank" href="https://t.me/imporaa"><i class="fa fa-send-o fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-xs-12" dir="rtl">
+                                            <asp:Label ID="lbl_lastuniqevisitday" runat="server" Text="" ForeColor="White"></asp:Label>
+                                            &nbsp;&nbsp;
+                                        <asp:Label ID="lbl_lastdayvisit" runat="server" Text="" ForeColor="White"></asp:Label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>
+                                        &copy; Copyright <span class="current-year"></span>by Nobin Gostar Paya. All Rights Reserved.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <nav id="sub-menu " dir="rtl">
+                                        <ul class="">
+                                            <li>
+                                                <a href="Sitemap_Index.xml">نقشه سایت </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">تماس با ما </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="bottomMenu ">
+                    <%--    <a id="tel-bottom" href="#" class="hidden-md hidden-sm hidden-xs"><i class="fa fa-phone"></i><%= text_tel %> </a>
+                </div>
+                <a id="tel-top2" target="_blank" href="<%= h11 %>" class="hidden-lg fadeInDown animated" dir="rtl"><%= t11 %></a>
+                <a id="tel-top" href="<%= number_tel %>" class="hidden-lg"><i class="fa fa-phone"></i><%= text_tel %></a>--%>
+
+                    <a id="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+                    <a id="dide-bottom" href="https://api.whatsapp.com/send/?phone=989102094047&text&app_absent=0" target="_blank">
+                        <span id="typing-text">چه کمکی از دست من برمیاد؟</span>
+                        <img src="img/whatsapp_logo.png" class="whatsapp-icon" alt="واتساپ">
+                        <img src="img/backup_woman.png" class="support-woman" alt="پشتیبانی">
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+    <script src="assets/js/typing.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script src="bower_components/sticky-kit/jquery.sticky-kit.min.js"></script>
+    <script src="bower_components/jquery.appear.js/jquery.appear.js"></script>
+    <script src="bower_components/slick.js/slick/slick.min.js"></script>
+    <script src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.min.js"></script>
+    <script src="bower_components/countto/jquery.countTo.js"></script>
+    <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script src="assets/js/index2.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Index.init();
+        });
+    </script>
+    <%-- <script>
+        var news = [["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""]];
+        news[0][0] = '<%= t1 %>';
+        news[0][1] = '<%= h1 %>';
+        news[1][0] = '<%= t2 %>';
+        news[1][1] = '<%= h2 %>';
+        news[2][0] = '<%= t3 %>';
+        news[2][1] = '<%= h3 %>';
+        news[3][0] = '<%= t4 %>';
+        news[3][1] = '<%= h4 %>';
+        news[4][0] = '<%= t5 %>';
+        news[4][1] = '<%= h5 %>';
+        news[5][0] = '<%= t6 %>';
+        news[5][1] = '<%= h6 %>';
+        news[6][0] = '<%= t7 %>';
+        news[6][1] = '<%= h7 %>';
+        news[7][0] = '<%= t8 %>';
+        news[7][1] = '<%= h8 %>';
+        news[8][0] = '<%= t9 %>';
+        news[8][1] = '<%= h9 %>';
+        news[9][0] = '<%= t10 %>';
+        news[9][1] = '<%= h10 %>';
+
+
+
+        var counter = 0;
+        var elem = document.getElementById("tel-top2");
+
+        function change() {
+            $(elem).fadeTo(3000, 0, function () {
+
+                this.innerHTML = news[counter][0];
+                this.href = news[counter][1];
+                counter = ++counter % 10;
+                $(this).fadeTo(3000, 1, change)
+            })
+
+        }
+
+        change()
+    </script>
+    <script>
+        var news = [["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""], ["", ""]];
+        news[0][0] = '<%= t1 %>';
+        news[0][1] = '<%= h1 %>';
+        news[1][0] = '<%= t2 %>';
+        news[1][1] = '<%= h2 %>';
+        news[2][0] = '<%= t3 %>';
+        news[2][1] = '<%= h3 %>';
+        news[3][0] = '<%= t4 %>';
+        news[3][1] = '<%= h4 %>';
+        news[4][0] = '<%= t5 %>';
+        news[4][1] = '<%= h5 %>';
+        news[5][0] = '<%= t6 %>';
+        news[5][1] = '<%= h6 %>';
+        news[6][0] = '<%= t7 %>';
+        news[6][1] = '<%= h7 %>';
+        news[7][0] = '<%= t8 %>';
+        news[7][1] = '<%= h8 %>';
+        news[8][0] = '<%= t9 %>';
+        news[8][1] = '<%= h9 %>';
+        news[9][0] = '<%= t10 %>';
+        news[9][1] = '<%= h10 %>';
+
+
+
+        var counter2 = 0;
+
+        var elem2 = document.getElementById("top_desk");
+        function change2() {
+
+            $(elem2).fadeTo(3000, 0, function () {
+
+                this.innerHTML = news[counter2][0];
+                this.href = news[counter2][1];
+                counter2 = ++counter2 % 10;
+                $(this).fadeTo(3000, 1, change2)
+            })
+        }
+
+        change2()
+    </script>--%>
+</body>
+</html>
+
