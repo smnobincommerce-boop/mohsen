@@ -10,114 +10,96 @@
 namespace WebApplicationImpora2222025.panel.maneger {
     
     
-    public partial class Chat {
+    public partial class Follow_up_Project {
         
         /// <summary>
-        /// lblRecipientName control.
+        /// txt_project_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRecipientName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_project_name;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// txt_company_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_company_name;
         
         /// <summary>
-        /// upChatMessages control.
+        /// txt_date_create control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upChatMessages;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_date_create;
         
         /// <summary>
-        /// Timer1 control.
+        /// txt_date_last_edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.Timer Timer1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_date_last_edit;
         
         /// <summary>
-        /// hfOldestMessageId control.
+        /// txt_project_description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfOldestMessageId;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_project_description;
         
         /// <summary>
-        /// MessagesListView control.
+        /// txt_log_count control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView MessagesListView;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txt_log_count;
         
         /// <summary>
-        /// lblMessage control.
+        /// ListView_project_logs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.ListView ListView_project_logs;
         
         /// <summary>
-        /// upSendMessage control.
+        /// txt_log_description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upSendMessage;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_log_description;
         
         /// <summary>
-        /// txtMessage control.
+        /// btnSubmitLog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMessage;
+        protected global::System.Web.UI.WebControls.Button btnSubmitLog;
         
         /// <summary>
-        /// fileUpload control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileUpload;
-        
-        /// <summary>
-        /// btnSend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSend;
-        
-        /// <summary>
-        /// btnBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBack;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

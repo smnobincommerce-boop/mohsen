@@ -7,117 +7,110 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplicationImpora2222025.panel.maneger {
-    
-    
-    public partial class Chat {
-        
+namespace WebApplicationImpora2222025.panel.maneger
+{
+
+
+    public partial class edit_steel_store_text_tag
+    {
+
         /// <summary>
-        /// lblRecipientName control.
+        /// success_message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRecipientName;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl success_message;
+
         /// <summary>
-        /// ScriptManager1 control.
+        /// success_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
+        protected global::System.Web.UI.WebControls.Label success_Label;
+
         /// <summary>
-        /// upChatMessages control.
+        /// warning_message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upChatMessages;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl warning_message;
+
         /// <summary>
-        /// Timer1 control.
+        /// warning_Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.Timer Timer1;
-        
+        protected global::System.Web.UI.WebControls.Label warning_Label;
+
         /// <summary>
-        /// hfOldestMessageId control.
+        /// main_title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfOldestMessageId;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl main_title;
+
         /// <summary>
-        /// MessagesListView control.
+        /// div_tags control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView MessagesListView;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_tags;
+
         /// <summary>
-        /// lblMessage control.
+        /// H1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H1;
+
         /// <summary>
-        /// upSendMessage control.
+        /// txt_tags control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upSendMessage;
-        
+        protected global::System.Web.UI.WebControls.TextBox txt_tags;
+
         /// <summary>
-        /// txtMessage control.
+        /// RequiredFieldValidator4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMessage;
-        
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+
         /// <summary>
-        /// fileUpload control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileUpload;
-        
+        protected global::System.Web.UI.WebControls.Button Button3;
+
         /// <summary>
-        /// btnSend control.
+        /// ListView_tag control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSend;
-        
-        /// <summary>
-        /// btnBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBack;
+        protected global::System.Web.UI.WebControls.ListView ListView_tag;
     }
 }
